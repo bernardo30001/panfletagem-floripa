@@ -1,91 +1,91 @@
 # Top 20 locais prioritários para panfletagem — Florianópolis 2026
 
-Critério: Índice de Prioridade (pesos: potencial 0.40, gap 0.35, densidade 0.15, consistência 0.10). Fonte: TSE 2022/2024.
+Critério: Índice de Prioridade (pesos: potencial 0.40, liberal 0.25, densidade 0.20, consistência 0.15). Fonte: TSE 2022/2024. A votação do Matheus em 2022 não entra no cálculo.
 
-## Centro (7 locais)
+## Centro (10 locais)
 
 **1º — COLEGIO CATARINENSE** (score 100.0)  
 RUA ESTEVES JÚNIOR, N. 711 — Centro  
-_1.930 votos de direita em 2022 (30,8% dos válidos); Matheus com só 3 votos (penetração 0,2%); 7.940 eleitores no local._
+_1.930 votos de direita em 2022 (30,8% dos válidos); NOVO com 9,2% em 2024; 7.940 eleitores no local._
 
-**2º — CENTRO EDUCACIONAL MENINO JESUS** (score 89.1)  
+**2º — CENTRO EDUCACIONAL MENINO JESUS** (score 89.2)  
 RUA ESTEVES JÚNIOR, N. 969 — Centro  
-_1.548 votos de direita em 2022 (29,3% dos válidos); Matheus com só 2 votos (penetração 0,1%); 6.583 eleitores no local._
+_1.548 votos de direita em 2022 (29,3% dos válidos); NOVO com 9,9% em 2024; 6.583 eleitores no local._
 
-**4º — UDESC - CENTRO DE ARTES - CEART** (score 86.4)  
+**3º — UDESC - CENTRO DE ARTES - CEART** (score 85.7)  
 AVENIDA MADRE BENVENUTA, 2007 — Itacorubi  
-_1.429 votos de direita em 2022 (22,9% dos válidos); Matheus com só 9 votos (penetração 0,6%); 7.937 eleitores no local._
+_1.429 votos de direita em 2022 (22,9% dos válidos); NOVO com 7,4% em 2024; 7.937 eleitores no local._
 
-**12º — COLEGIO ESTADUAL GETULIO VARGAS** (score 76.7)  
+**10º — ESCOLA BASICA JOSÉ DO VALLE PEREIRA** (score 62.8)  
+RODOVIA JOAO PAULO, 1268 — João Paulo  
+_828 votos de direita em 2022 (23,9% dos válidos); NOVO com 7,6% em 2024; 4.283 eleitores no local._
+
+**12º — UDESC - ESCOLA SUPERIOR DE ADMINISTRAÇÃO E GERÊNCIA - ESAG** (score 62.3)  
+AVENIDA MADRE BENVENUTA, 2037 — Itacorubi  
+_688 votos de direita em 2022 (26,6% dos válidos); NOVO com 10,3% em 2024; 3.181 eleitores no local._
+
+**14º — CORAÇÃO DE JESUS - ASSOCIAÇÃO FRANCISCANA DE ENSINO BOM JESUS** (score 62.1)  
+RUA EMIR ROSA, N. 120 — Centro  
+_770 votos de direita em 2022 (28,4% dos válidos); NOVO com 9,2% em 2024; 3.423 eleitores no local._
+
+**15º — ESCOLA DE ENSINO BASICO LEONOR DE BARROS** (score 61.8)  
+RUA PASTOR WILLIAM RICHARD SCHISLER FILHO, 80 — Itacorubi  
+_848 votos de direita em 2022 (21,5% dos válidos); NOVO com 6,8% em 2024; 5.019 eleitores no local._
+
+**16º — COLEGIO ESTADUAL GETULIO VARGAS** (score 60.0)  
 RUA JOAO MOTTA ESPEZIM, N. 499 — Saco dos Limões  
-_883 votos de direita em 2022 (17,2% dos válidos); Matheus com só 1 voto (penetração 0,1%); 7.163 eleitores no local._
+_883 votos de direita em 2022 (17,2% dos válidos); NOVO com 2,2% em 2024; 7.163 eleitores no local._
 
-**17º — INSTITUTO ESTADUAL DE EDUCAÇÃO - IEE** (score 70.6)  
-AVENIDA MAURO RAMOS, N. 275 — Centro  
-_728 votos de direita em 2022 (17,7% dos válidos); Matheus com só 1 voto (penetração 0,1%); 5.905 eleitores no local; abstenção alta (22,5%)._
+**18º — COLEGIO ESTADUAL SIMAO JOSE HESS** (score 59.5)  
+AVENIDA MADRE BENVENUTA, 463 — Trindade  
+_787 votos de direita em 2022 (21,8% dos válidos); NOVO com 7,4% em 2024; 4.682 eleitores no local._
 
-**19º — ESCOLA DE EDUCAÇÃO BÁSICA PADRE ANCHIETA** (score 70.1)  
-RUA RUI BARBOSA, N. 525 — Agronômica  
-_784 votos de direita em 2022 (21,9% dos válidos); Matheus com só 1 voto (penetração 0,1%); 5.038 eleitores no local._
+**19º — ACOJAR** (score 59.2)  
+RUA NERY CARDOSO BITTENCOURT, N. 61 — Santa Mônica  
+_618 votos de direita em 2022 (27,7% dos válidos); NOVO com 10,6% em 2024; 2.777 eleitores no local._
 
-**20º — ESCOLA TÉCNICA - CENTRO FEDERAL DE EDUC. TECNOLÓGICA DE SC - CEFET/SC** (score 69.5)  
-AVENIDA MAURO RAMOS, N. 950 — Centro  
-_712 votos de direita em 2022 (19,9% dos válidos); Matheus zerado — gap total; 4.880 eleitores no local._
+## Continente (2 locais)
 
-## Continente (4 locais)
-
-**6º — COLÉGIO SALVATORIANO NOSSA SENHORA DE FÁTIMA** (score 85.2)  
+**5º — COLÉGIO SALVATORIANO NOSSA SENHORA DE FÁTIMA** (score 73.5)  
 RUA AFONSO PENA, N. 1264 — Coloninha  
-_1.362 votos de direita em 2022 (25,1% dos válidos); Matheus com só 1 voto (penetração 0,1%); 6.735 eleitores no local._
+_1.362 votos de direita em 2022 (25,1% dos válidos); NOVO com 4,6% em 2024; 6.735 eleitores no local._
 
-**10º — ESCOLA DE EDUCAÇÃO BÁSICA ADERBAL RAMOS DA SILVA** (score 77.7)  
+**7º — ESCOLA DE EDUCAÇÃO BÁSICA ADERBAL RAMOS DA SILVA** (score 64.2)  
 RUA CORONEL PEDRO DEMORO, N. 1998 — Balneário  
-_1.153 votos de direita em 2022 (25,8% dos válidos); Matheus com só 2 votos (penetração 0,2%); 5.836 eleitores no local._
+_1.153 votos de direita em 2022 (25,8% dos válidos); NOVO com 4,6% em 2024; 5.836 eleitores no local._
 
-**15º — ESCOLA DE EDUCAÇÃO BÁSICA ROSA TORRES DE MIRANDA** (score 73.5)  
-RUA MELVIN JONES, N. 389 — Jardim Atlântico  
-_957 votos de direita em 2022 (25,4% dos válidos); Matheus zerado — gap total; 5.093 eleitores no local._
+## Norte da Ilha (4 locais)
 
-**18º — ESCOLA DE EDUCAÇÃO BÁSICA EDITH GAMA RAMOS** (score 70.5)  
-RUA DIB CHEREM, N. 2773 — Capoeiras  
-_859 votos de direita em 2022 (22,7% dos válidos); Matheus com só 1 voto (penetração 0,1%); 5.140 eleitores no local._
-
-## Norte da Ilha (5 locais)
-
-**5º — ESCOLA BÁSICA MUNICIPAL PROFESSORA HERONDINA MEDEIROS ZEFERINO** (score 85.4)  
+**6º — ESCOLA BÁSICA MUNICIPAL PROFESSORA HERONDINA MEDEIROS ZEFERINO** (score 73.0)  
 RUA TRÊS MARIAS, 1072 — Ingleses Centro  
-_1.348 votos de direita em 2022 (25,8% dos válidos); Matheus com só 3 votos (penetração 0,2%); 7.693 eleitores no local; abstenção alta (23,3%)._
+_1.348 votos de direita em 2022 (25,8% dos válidos); NOVO com 3,2% em 2024; 7.693 eleitores no local; abstenção alta (23,3%)._
 
-**7º — ESCOLA BASICA MUNICIPAL OSMAR CUNHA** (score 79.8)  
+**8º — JURERÊ SPORTS CENTER** (score 63.1)  
+AVENIDA DOS DOURADOS, 481 — Jurere Oeste  
+_902 votos de direita em 2022 (36,7% dos válidos); NOVO com 8,5% em 2024; 3.188 eleitores no local._
+
+**9º — ESCOLA BASICA MUNICIPAL OSMAR CUNHA** (score 62.9)  
 RUA TERTULIANO DE BRITO XAVIER, 661 — Canasvieiras  
-_1.168 votos de direita em 2022 (23,3% dos válidos); Matheus zerado — gap total; 7.037 eleitores no local._
+_1.168 votos de direita em 2022 (23,3% dos válidos); NOVO com 3,2% em 2024; 7.037 eleitores no local._
 
-**8º — ESCOLA DE ENSINO BÁSICO INTENDENTE JOSE FERNANDES** (score 79.0)  
+**17º — ESCOLA DE ENSINO BÁSICO INTENDENTE JOSE FERNANDES** (score 59.7)  
 RUA JOAO GUALBERTO SOARES, 324 — Capivari  
-_1.018 votos de direita em 2022 (22,7% dos válidos); Matheus zerado — gap total; 6.728 eleitores no local; abstenção alta (23,8%)._
-
-**14º — COLÉGIO SANTA TEREZINHA** (score 73.9)  
-SERVIDAO SAFIRA, N. 148 — Ingleses Centro  
-_1.002 votos de direita em 2022 (28,5% dos válidos); Matheus zerado — gap total; 5.148 eleitores no local; abstenção alta (23,5%)._
-
-**16º — ESCOLA BÁSICA MUNICIPAL INTENDENTE ARICOMEDES DA SILVA** (score 72.2)  
-RODOVIA LEONEL PEREIRA, 930 — Cachoeira do Bom Jesus Leste  
-_853 votos de direita em 2022 (20,7% dos válidos); Matheus zerado — gap total; 5.702 eleitores no local._
+_1.018 votos de direita em 2022 (22,7% dos válidos); NOVO com 1,5% em 2024; 6.728 eleitores no local; abstenção alta (23,8%)._
 
 ## Sul da Ilha (4 locais)
 
-**3º — ESCOLA BÁSICA MUNICIPAL BRIGADEIRO EDUARDO GOMES** (score 88.9)  
+**4º — ESCOLA BÁSICA MUNICIPAL BRIGADEIRO EDUARDO GOMES** (score 75.6)  
 AVENIDA PEQUENO PRÍNCIPE, N. 2939 — Campeche Leste  
-_1.399 votos de direita em 2022 (21,7% dos válidos); Matheus zerado — gap total; 8.629 eleitores no local._
+_1.399 votos de direita em 2022 (21,7% dos válidos); NOVO com 2,8% em 2024; 8.629 eleitores no local._
 
-**9º — ESCOLA DE EDUCACAO BASICA IDELFONSO LINHARES** (score 78.8)  
+**11º — ESCOLA DE EDUCACAO BASICA IDELFONSO LINHARES** (score 62.5)  
 RUA VER. OSVALDO BITTENCOURT, N. 206 — Carianos  
-_1.260 votos de direita em 2022 (26,0% dos válidos); Matheus com só 4 votos (penetração 0,3%); 6.484 eleitores no local._
+_1.260 votos de direita em 2022 (26,0% dos válidos); NOVO com 2,7% em 2024; 6.484 eleitores no local._
 
-**11º — ESCOLA DE ENSINO MÉDIO VEREADOR OSCAR MANOEL CONCEIÇÃO** (score 76.9)  
-RODOVIA SC 405, S/N, — Campeche Central  
-_1.095 votos de direita em 2022 (20,8% dos válidos); Matheus zerado — gap total; 7.148 eleitores no local._
-
-**13º — ESCOLA BÁSICA MUNICIPAL JOÃO GONÇALVES PINHEIRO** (score 75.1)  
+**13º — ESCOLA BÁSICA MUNICIPAL JOÃO GONÇALVES PINHEIRO** (score 62.2)  
 RUA SILVIO LOPES ARAÚJO, S/N — Rio Tavares do Norte  
-_944 votos de direita em 2022 (18,9% dos válidos); Matheus com só 3 votos (penetração 0,3%); 6.682 eleitores no local._
+_944 votos de direita em 2022 (18,9% dos válidos); NOVO com 2,6% em 2024; 6.682 eleitores no local._
+
+**20º — ESCOLA DE ENSINO MÉDIO VEREADOR OSCAR MANOEL CONCEIÇÃO** (score 57.8)  
+RODOVIA SC 405, S/N, — Campeche Central  
+_1.095 votos de direita em 2022 (20,8% dos válidos); NOVO com 2,0% em 2024; 7.148 eleitores no local._

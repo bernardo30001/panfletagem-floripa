@@ -16,33 +16,35 @@
 ## 2. Como o Índice de Prioridade é calculado
 
 ```
-score = 100 × minmax( 0.40·POTENCIAL + 0.35·GAP + 0.15·DENSIDADE + 0.10·CONSISTÊNCIA )
+score = 100 × minmax( 0.40·POTENCIAL + 0.25·LIBERAL + 0.20·DENSIDADE + 0.15·CONSISTÊNCIA )
 
 POTENCIAL    = votos absolutos NOVO+PL, dep. estadual 2022 (min-max)
-GAP          = 1 − votos_Matheus / votos_direita_dep_est_2022 (min-max)
+LIBERAL      = média do %NOVO p/ vereador 2024 e dep. estadual 2022 (min-max)
 DENSIDADE    = eleitores aptos do local (min-max)
 CONSISTÊNCIA = 1 − |%direita 2022 − %direita 2024| (min-max)
 ```
 
 Pesos e método de normalização em `pipeline/config.py` (`PESOS_INDICE`, `NORMALIZACAO='minmax'`). Locais com menos de 500 eleitores recebem score 0 (`flag_pequeno`) — não valem hora de equipe.
 
+**A votação do Matheus em 2022 NÃO entra no score.** O componente anterior (GAP = 1 − penetração dele) foi removido: com 84 votos, a penetração fica abaixo de 1% em 149 dos 152 locais — é ruído — e a normalização esticava essa faixa de 6 p.p. para 0..1, transformando ruído em 35% do score e penalizando justamente os poucos locais onde havia base. No lugar entrou LIBERAL, que mede onde vive o eleitor-alvo com uma amostra ~700× maior. Os votos dele seguem no CSV e nos popups como diagnóstico, sem efeito no ranking. Premissa: começamos do zero.
+
 ---
 ## 3. Núcleo duro da direita (quartil superior de % NOVO+PL, bairros com 1.000+ eleitores)
 
 | Bairro | Região | Aptos | Votos direita 22 | % direita | % NOVO | % PL | Matheus | Score |
 |---|---|---|---|---|---|---|---|---|
-| Jurere Oeste | Norte da Ilha | 3.188 | 902 | 36,7% | 9,4% | 27,4% | 2 | 67.3 |
-| Jurere Leste | Norte da Ilha | 3.050 | 675 | 28,7% | 4,8% | 23,9% | 0 | 53.3 |
-| Daniela | Norte da Ilha | 1.608 | 172 | 28,7% | 2,8% | 25,8% | 0 | 48.1 |
-| Santa Mônica | Centro | 2.777 | 618 | 27,7% | 8,5% | 19,2% | 0 | 63.7 |
-| Balneário | Continente | 8.577 | 1.804 | 26,8% | 4,2% | 22,6% | 2 | 72.7 |
-| Ingleses Centro | Norte da Ilha | 16.545 | 3.014 | 26,7% | 3,5% | 23,2% | 4 | 77.1 |
-| Carianos | Sul da Ilha | 6.966 | 1.260 | 26,0% | 2,4% | 23,6% | 4 | 73.3 |
-| Canto | Continente | 7.581 | 1.512 | 25,5% | 3,2% | 22,3% | 3 | 61.1 |
-| Centro | Centro | 43.582 | 8.529 | 25,4% | 5,7% | 19,7% | 7 | 74.4 |
-| Canasvieiras | Norte da Ilha | 10.401 | 1.825 | 24,5% | 3,1% | 21,4% | 0 | 74.0 |
-| Estreito | Continente | 6.354 | 1.191 | 24,4% | 3,6% | 20,8% | 0 | 63.0 |
-| Coloninha | Continente | 8.957 | 1.660 | 24,3% | 3,8% | 20,4% | 1 | 74.7 |
+| Jurere Oeste | Norte da Ilha | 3.188 | 902 | 36,7% | 9,4% | 27,4% | 2 | 63.1 |
+| Jurere Leste | Norte da Ilha | 3.050 | 675 | 28,7% | 4,8% | 23,9% | 0 | 35.1 |
+| Daniela | Norte da Ilha | 1.608 | 172 | 28,7% | 2,8% | 25,8% | 0 | 25.8 |
+| Santa Mônica | Centro | 2.777 | 618 | 27,7% | 8,5% | 19,2% | 0 | 59.2 |
+| Balneário | Continente | 8.577 | 1.804 | 26,8% | 4,2% | 22,6% | 2 | 58.2 |
+| Ingleses Centro | Norte da Ilha | 16.545 | 3.014 | 26,7% | 3,5% | 23,2% | 4 | 61.8 |
+| Carianos | Sul da Ilha | 6.966 | 1.260 | 26,0% | 2,4% | 23,6% | 4 | 58.2 |
+| Canto | Continente | 7.581 | 1.512 | 25,5% | 3,2% | 22,3% | 3 | 42.6 |
+| Centro | Centro | 43.582 | 8.529 | 25,4% | 5,7% | 19,7% | 7 | 65.0 |
+| Canasvieiras | Norte da Ilha | 10.401 | 1.825 | 24,5% | 3,1% | 21,4% | 0 | 56.4 |
+| Estreito | Continente | 6.354 | 1.191 | 24,4% | 3,6% | 20,8% | 0 | 46.3 |
+| Coloninha | Continente | 8.957 | 1.660 | 24,3% | 3,8% | 20,4% | 1 | 61.5 |
 
 É onde a mensagem já tem audiência: material de reforço e recrutamento de voluntários rendem mais que persuasão.
 
@@ -50,14 +52,14 @@ Pesos e método de normalização em `pipeline/config.py` (`PESOS_INDICE`, `NORM
 
 | Bairro | Região | Aptos | Votos direita 22 | % direita | Abstenção 22 | Score |
 |---|---|---|---|---|---|---|
-| Itacorubi | Centro | 20.828 | 3.186 | 23,2% | 14,9% | 71.0 |
-| Capoeiras | Continente | 12.815 | 1.835 | 22,3% | 17,1% | 59.6 |
-| Capivari | Norte da Ilha | 11.095 | 1.782 | 23,8% | 22,9% | 71.2 |
-| Jardim Atlântico | Continente | 8.346 | 1.327 | 22,6% | 18,8% | 66.3 |
-| Córrego Grande | Centro | 6.679 | 1.101 | 22,2% | 15,6% | 57.6 |
-| Santinho | Norte da Ilha | 3.550 | 559 | 22,8% | 22,4% | 62.9 |
-| Ingleses Sul | Norte da Ilha | 3.561 | 557 | 22,7% | 23,2% | 63.7 |
-| Ratones | Norte da Ilha | 2.472 | 431 | 23,6% | 17,8% | 56.3 |
+| Itacorubi | Centro | 20.828 | 3.186 | 23,2% | 14,9% | 65.9 |
+| Capoeiras | Continente | 12.815 | 1.835 | 22,3% | 17,1% | 41.3 |
+| Capivari | Norte da Ilha | 11.095 | 1.782 | 23,8% | 22,9% | 51.3 |
+| Jardim Atlântico | Continente | 8.346 | 1.327 | 22,6% | 18,8% | 47.2 |
+| Córrego Grande | Centro | 6.679 | 1.101 | 22,2% | 15,6% | 45.4 |
+| Santinho | Norte da Ilha | 3.550 | 559 | 22,8% | 22,4% | 43.2 |
+| Ingleses Sul | Norte da Ilha | 3.561 | 557 | 22,7% | 23,2% | 43.3 |
+| Ratones | Norte da Ilha | 2.472 | 431 | 23,6% | 17,8% | 33.4 |
 
 Volume alto e % intermediário = melhor custo-benefício de persuasão. É o coração do roteiro de panfletagem.
 
@@ -71,12 +73,12 @@ Os 84 votos de 2022 caíram assim:
 | ESCOLA BASICA JOSÉ DO VALLE PEREIRA | João Paulo | 6 | 828 | 0,72% |
 | ESCOLA DE EDUCACAO BASICA IDELFONSO LINHARES | Carianos | 4 | 1.260 | 0,32% |
 | ESCOLA DE ENSINO BASICO LEONOR DE BARROS | Itacorubi | 4 | 848 | 0,47% |
-| COLEGIO CATARINENSE | Centro | 3 | 1.930 | 0,16% |
-| ESCOLA BÁSICA MUNICIPAL PROFESSORA HERONDINA MEDEIROS ZEFERINO | Ingleses Centro | 3 | 1.348 | 0,22% |
-| N.E.I. - NÚCLEO DE EDUCAÇÃO INFANTIL MARIA SALOMÉ DOS SANTOS | Sambaqui | 3 | 197 | 1,52% |
 | ESCOLA BÁSICA MUNICIPAL JOÃO GONÇALVES PINHEIRO | Rio Tavares do Norte | 3 | 944 | 0,32% |
-| INSTITUTO FEDERAL DE SANTA CATARINA - CAMPUS FLORIANOPOLIS CONTINENTE | Coqueiros | 2 | 137 | 1,46% |
+| COLEGIO CATARINENSE | Centro | 3 | 1.930 | 0,16% |
+| N.E.I. - NÚCLEO DE EDUCAÇÃO INFANTIL MARIA SALOMÉ DOS SANTOS | Sambaqui | 3 | 197 | 1,52% |
+| ESCOLA BÁSICA MUNICIPAL PROFESSORA HERONDINA MEDEIROS ZEFERINO | Ingleses Centro | 3 | 1.348 | 0,22% |
 | O. ASSIST. SOCIAL DOM ORIONE (PARÓQUIA SÃO JOÃO BATISTA E SANTA LUZIA) | Capoeiras | 2 | 201 | 1,00% |
+| ESCOLA BÁSICA MUNICIPAL ALMIRANTE CARVALHAL | Coqueiros | 2 | 848 | 0,24% |
 
 **88 locais (57,9%) estão zerados** (outros 20 são locais criados em 2024, sem dado de 2022). O voto existente concentra-se no eixo Centro–UFSC–Itacorubi (perfil universitário/liberal, aderente ao NOVO). A leitura estratégica: não há reduto a defender — TODO local de score alto é terreno de conquista.
 
@@ -98,14 +100,14 @@ Locais no quartil superior de abstenção 2022 (>19,3%) e score acima da mediana
 
 | Local | Bairro | Abstenção 22 | Votos direita 22 | Score |
 |---|---|---|---|---|
-| ESCOLA BÁSICA MUNICIPAL PROFESSORA HERONDINA MEDEIROS ZEFERINO | Ingleses Centro | 23,3% | 1.348 | 85.4 |
-| ESCOLA BASICA MUNICIPAL OSMAR CUNHA | Canasvieiras | 21,8% | 1.168 | 79.8 |
-| ESCOLA DE ENSINO BÁSICO INTENDENTE JOSE FERNANDES | Capivari | 23,8% | 1.018 | 79.0 |
-| COLÉGIO SANTA TEREZINHA | Ingleses Centro | 23,5% | 1.002 | 73.9 |
-| INSTITUTO ESTADUAL DE EDUCAÇÃO - IEE | Centro | 22,5% | 728 | 70.6 |
-| ESCOLA DE EDUCAÇÃO BÁSICA PADRE ANCHIETA | Agronômica | 21,6% | 784 | 70.1 |
-| ESCOLA TÉCNICA - CENTRO FEDERAL DE EDUC. TECNOLÓGICA DE SC - CEFET/SC | Centro | 19,6% | 712 | 69.5 |
-| ESCOLA BASICA MUNICIPAL MARIA CONCEICAO NUNES | Rio Vermelho | 20,5% | 782 | 66.2 |
+| ESCOLA BÁSICA MUNICIPAL PROFESSORA HERONDINA MEDEIROS ZEFERINO | Ingleses Centro | 23,3% | 1.348 | 73.0 |
+| ESCOLA BASICA MUNICIPAL OSMAR CUNHA | Canasvieiras | 21,8% | 1.168 | 62.9 |
+| ESCOLA DE ENSINO BÁSICO INTENDENTE JOSE FERNANDES | Capivari | 23,8% | 1.018 | 59.7 |
+| ESCOLA DE EDUCAÇÃO BÁSICA PADRE ANCHIETA | Agronômica | 21,6% | 784 | 57.2 |
+| COLÉGIO SANTA TEREZINHA | Ingleses Centro | 23,5% | 1.002 | 56.3 |
+| INSTITUTO ESTADUAL DE EDUCAÇÃO - IEE | Centro | 22,5% | 728 | 54.5 |
+| ESCOLA TÉCNICA - CENTRO FEDERAL DE EDUC. TECNOLÓGICA DE SC - CEFET/SC | Centro | 19,6% | 712 | 54.3 |
+| COLÉGIO DA LAGOA | Lagoa | 21,2% | 659 | 53.6 |
 
 ---
 ## 8. Voto órfão (bairro forte em NOVO/PL sem vereador local eleito em 2024)
