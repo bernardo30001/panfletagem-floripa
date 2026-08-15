@@ -1,0 +1,5 @@
+# dados brutos do TSE (~700 MB) — o pipeline rebaixa sozinho
+data/
+__pycache__/
+*.pyc
+.DS_Store
